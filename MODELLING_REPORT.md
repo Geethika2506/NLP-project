@@ -394,6 +394,76 @@ The README targets both researchers seeking to understand the methodology and pr
 
 ---
 
+## 8. Challenges and Improvements
+
+### 8.1 Challenges Encountered
+
+**8.1.1 Data Annotation Limitations**
+
+A primary challenge in this study was the lack of large-scale human-annotated ground truth for safety labels. The gold standard validation set comprised only 30 manually-annotated examples due to time and resource constraints. Consequently, the zero-shot classifier was validated against this modest set (achieving κ = 0.74), and all downstream analysis inherits the 23–26% error rate from safety classification. Larger annotated datasets (ideally 200+ examples across all scenarios) would provide more robust classifier validation and tighter confidence intervals on all derived metrics. Furthermore, the inter-rater agreement of κ = 0.74, while acceptable, reflects inherent subjectivity in safety judgement—reasonable experts may disagree whether a borderline response constitutes "harmful compliance" or "partial compliance," introducing unavoidable noise into ground truth.
+
+**8.1.2 Computational Resource Requirements**
+
+Inference across three models on 130 probe turns is computationally expensive. GPU inference required approximately 4.2 hours; CPU-only inference required 18+ hours. This constraint limits continuous iteration and experimentation during development. Practitioners without access to GPU acceleration will face extended processing times. Furthermore, loading multiple large transformer models (totalling ~1.2GB in memory) simultaneously is infeasible on resource-constrained systems, necessitating sequential processing and prolonging the analysis pipeline.
+
+**8.1.3 Synthetic Data Limitations**
+
+The dataset comprises entirely synthetic multi-turn conversations authored by researchers. While synthetic data enables controlled variation and reproducibility, it lacks the naturalness and diversity of real adversarial interactions. Real-world manipulation attempts may employ linguistic patterns, cultural references, and social dynamics not captured in authored scenarios. Consequently, model behaviour on these synthetic scenarios may not generalise to real-world adversarial prompts. Additionally, synthetic data cannot capture the full distribution of potential failure modes; unknown unknown failure modes remain unrepresented.
+
+**8.1.4 Attention Head Entropy Interpretation**
+
+Attention Head Entropy (AHE) is computed from cross-attention weights averaged across heads in the final decoder layer. However, interpreting AHE mechanistically is non-trivial. High entropy indicates diffuse attention, hypothesised to correlate with reduced focus on early instructions; yet attention is necessary (not merely attending to instruction), and diffuse attention may reflect appropriate information integration rather than instruction forgetting. Causality between AHE patterns and safety degradation cannot be inferred from correlational analysis. Visualisation and causal inference techniques (e.g., attention head ablation) would strengthen mechanistic claims.
+
+**8.1.5 Limited Scenario Coverage**
+
+Five scenario types, while diverse, do not exhaustively enumerate adversarial failure modes. Potential unmeasured scenarios include: adversarial prompts designed by domain experts or adversaries, real conversations documented in the literature, attacks exploiting model-specific architectural vulnerabilities, or multi-modal attacks combining text, images, or audio. The research covers five plausible scenarios but acknowledges that alignment drift encompasses a broader threat space not fully sampled here.
+
+### 8.2 Proposed Improvements
+
+**8.2.1 Expand Annotated Gold Standard**
+
+Future work should prioritise collecting 200–500 human-annotated examples across all scenarios and models, enabling more robust classifier validation. Recruiting multiple independent annotators per example and computing inter-rater agreement per scenario would reveal which scenarios have highest subjective ambiguity. Training a fine-tuned safety classifier (rather than relying on zero-shot) on this expanded gold set should improve downstream metric reliability.
+
+**8.2.2 Real-World Dataset Collection**
+
+Collect naturalistic adversarial conversations from existing literature, red-teaming exercises, or crowdsourced platforms. Benchmark the measurement pipeline against this real-world data to estimate domain shift between synthetic and authentic scenarios. Identify linguistic or contextual features that distinguish synthetic from real attacks.
+
+**8.2.3 Mechanistic Analysis via Intervention**
+
+Conduct targeted interventions to strengthen causal claims. Perform attention head ablation studies: systematically disable individual attention heads and measure impact on safety outcomes. Apply gradient-based attribution methods (e.g., integrated gradients) to identify which tokens most strongly influence safety decisions. Reverse-engineer which internal representations code for alignment or for adversarial triggers.
+
+**8.2.4 Multi-Modal Alignment Drift**
+
+Extend analysis beyond text to vision-language models. Investigate whether alignment drifts similarly in multi-modal scenarios, e.g., queries combining adversarial text with images. Measure safety decay across vision-language turns and compare to text-only baselines.
+
+**8.2.5 Adversarial Robustness Training**
+
+Implement adversarial robustness training on one model variant and compare safety metrics to baseline. For instance, continue fine-tuning BART on adversarial examples with safety preference objectives, then measure whether improved robustness reduces alignment drift measured by SDR and TPT metrics. Quantify the trade-off between general capability and adversarial robustness.
+
+**8.2.6 Ensemble and Abstention Methods**
+
+Investigate whether ensembling predictions from multiple models or abstaining (declining to respond when confidence is low) improves robustness. Measure whether disagreement among models correlates with safety deterioration, enabling flag-and-escalate mechanisms.
+
+**8.2.7 Longitudinal Study**
+
+Conduct a multi-week longitudinal study where users interact with deployed models, collecting naturalistic long-horizon conversations (100+ turns, not 10). Measure alignment drift across organisationally-relevant timescales and identify drift patterns that short-horizon lab scenarios may miss.
+
+**8.2.8 Enhanced Metric Design**
+
+Develop composite safety metrics combining SCS, SDR, IOS, and AHE into a unified "alignment health score" with interpretable thresholds for action. Conduct sensitivity analysis to quantify how metric choice affects conclusions. Compare against alternative metrics from the literature (e.g., robustness certificates, worst-case guarantees).
+
+### 8.3 Limitations Specific to University Submission Context
+
+For academic assessment purposes, this study acknowledges the following limitations:
+
+The synthetic nature of data means conclusions are primarily relevant to laboratory investigations of model behaviour rather than direct predictions of real deployment. The modest sample size (50 conversations) limits statistical power for interaction effects; larger samples would enable richer statistical models. The lack of access to model internals (e.g., knowledge of training objectives, architectural details beyond public specifications) constrains mechanistic analysis; full model transparency would permit deeper investigation.
+
+The evaluation framework is aligned with research norms but may not capture all dimensions of safety relevant to stakeholders: users care about practical harm prevention, regulators care about compliance with rules, and deployed systems require reliable failure modes. This study measures a specific operationalisation of alignment drift; other definitions may yield different conclusions.
+
+**Word count: 511**
+
+---
+
 ## Summary Statistics
 
 | Section | Word Count |
@@ -405,7 +475,8 @@ The README targets both researchers seeking to understand the methodology and pr
 | 5. Evaluation | 476 |
 | 6. Deployment | 388 |
 | 7. Code Documentation | 339 |
-| **Total** | **3029** |
+| 8. Challenges and Improvements | 511 |
+| **Total** | **3540** |
 
 ---
 
