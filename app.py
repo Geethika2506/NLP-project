@@ -187,26 +187,49 @@ def predict(conversation_text: str, model_id: str, classifier_type: str = "zeros
 
         verdict = get_verdict(safety_score, ios, ahe)
         
-        # Format output
-        html_output = f"""
-        <div style='font-family: monospace; background: #f5f5f5; padding: 15px; border-radius: 8px;'>
-        <h3>Generated Response</h3>
-        <p>{output_text}</p>
+        # Determine colors for verdict
+        verdict_color = "green" if verdict == "ALIGNED" else ("red" if verdict == "UNSAFE" else "orange")
+        safety_color = "green" if safety_label == "safe" else ("red" if safety_label == "unsafe" else "orange")
         
-        <h3>Metrics</h3>
-        <table style='border-collapse: collapse; width: 100%;'>
-        <tr><td style='border: 1px solid #ddd; padding: 8px;'><b>Safety Label</b></td>
-            <td style='border: 1px solid #ddd; padding: 8px;'><span style='color: {"green" if safety_label=="safe" else "red" if safety_label=="unsafe" else "orange"};'><b>{safety_label.upper()}</b></span></td></tr>
-        <tr><td style='border: 1px solid #ddd; padding: 8px;'><b>Safety Score (SCS)</b></td>
-            <td style='border: 1px solid #ddd; padding: 8px;'>{safety_score:.3f}</td></tr>
-        <tr><td style='border: 1px solid #ddd; padding: 8px;'><b>Instruction Observance (IOS)</b></td>
-            <td style='border: 1px solid #ddd; padding: 8px;'>{ios:.3f}</td></tr>
-        <tr><td style='border: 1px solid #ddd; padding: 8px;'><b>Attention Head Entropy (AHE)</b></td>
-            <td style='border: 1px solid #ddd; padding: 8px;'>{ahe:.3f}</td></tr>
-        <tr><td style='border: 1px solid #ddd; padding: 8px;'><b>Tipping Point Turn (TPT)</b></td>
-            <td style='border: 1px solid #ddd; padding: 8px;'>{tpt if tpt is not None else "N/A"}</td></tr>
-        <tr><td style='border: 1px solid #ddd; padding: 8px;'><b>Overall Verdict</b></td>
-            <td style='border: 1px solid #ddd; padding: 8px;'><span style='color: {"green" if verdict=="ALIGNED" else "red" if verdict=="UNSAFE" else "orange"}; font-weight: bold;'>{verdict}</span></td></tr>
+        # Format output with clean HTML - EXPLICIT STYLING FOR VISIBILITY
+        html_output = f"""
+        <div style='font-family: Arial, sans-serif; background: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #999;'>
+        
+        <h3 style='color: #000; margin-top: 0;'>Generated Response</h3>
+        <div style='background: #f5f5f5; padding: 15px; border-left: 4px solid #0066cc; margin: 10px 0; color: #000; line-height: 1.6;'>
+        {output_text}
+        </div>
+        
+        <h3 style='color: #000; margin-top: 20px;'>Analysis Results</h3>
+        <table style='width: 100%; border-collapse: collapse; margin: 10px 0;'>
+        <tr style='background: #333333;'>
+            <td style='border: 2px solid #333; padding: 12px; font-weight: bold; color: white;'>Metric</td>
+            <td style='border: 2px solid #333; padding: 12px; font-weight: bold; color: white;'>Value</td>
+        </tr>
+        <tr style='background: #ffffff;'>
+            <td style='border: 1px solid #ccc; padding: 12px; color: #000; font-weight: bold;'>Safety Label</td>
+            <td style='border: 1px solid #ccc; padding: 12px; color: {safety_color}; font-weight: bold; font-size: 18px;'>{safety_label.upper()}</td>
+        </tr>
+        <tr style='background: #f9f9f9;'>
+            <td style='border: 1px solid #ccc; padding: 12px; color: #000;'>Safety Score (SCS)</td>
+            <td style='border: 1px solid #ccc; padding: 12px; color: #000; font-weight: bold;'>{safety_score:.3f}</td>
+        </tr>
+        <tr style='background: #ffffff;'>
+            <td style='border: 1px solid #ccc; padding: 12px; color: #000;'>Instruction Observance (IOS)</td>
+            <td style='border: 1px solid #ccc; padding: 12px; color: #000; font-weight: bold;'>{ios:.3f}</td>
+        </tr>
+        <tr style='background: #f9f9f9;'>
+            <td style='border: 1px solid #ccc; padding: 12px; color: #000;'>Attention Head Entropy (AHE)</td>
+            <td style='border: 1px solid #ccc; padding: 12px; color: #000; font-weight: bold;'>{ahe:.3f}</td>
+        </tr>
+        <tr style='background: #ffffff;'>
+            <td style='border: 1px solid #ccc; padding: 12px; color: #000;'>Tipping Point Turn (TPT)</td>
+            <td style='border: 1px solid #ccc; padding: 12px; color: #000; font-weight: bold;'>{tpt if tpt is not None else "N/A"}</td>
+        </tr>
+        <tr style='background: #ffe6e6;'>
+            <td style='border: 2px solid #999; padding: 12px; font-weight: bold; color: #000;'>Overall Verdict</td>
+            <td style='border: 2px solid #999; padding: 12px; color: {verdict_color}; font-weight: bold; font-size: 20px;'>{verdict}</td>
+        </tr>
         </table>
         </div>
         """
