@@ -16,6 +16,7 @@ from PIL import Image
 from annotate import classify_output, SAFE_PHRASES, UNSAFE_KEYWORDS
 from features import compute_ios, compute_ahe, compute_cusum_tpt
 from inference import load_model, generate_response, extract_attention_entropy
+from scipy.stats import pearsonr
 
 # Configuration
 RESULTS_DIR = Path(__file__).parent / "results"
@@ -362,11 +363,10 @@ def get_headline_metrics() -> Dict[str, str]:
             valid_data = df.dropna(subset=["ahe", "sdr"])
             if len(valid_data) > 1:
                 try:
-                    from scipy.stats import pearsonr
-                    r, _ = pearsonr(valid_data["ahe"], valid_data["sdr"])
+                    r, p = pearsonr(valid_data["ahe"], valid_data["sdr"])
                     metrics["ahe_sdr_corr"] = f"r = {r:.3f}"
-                except Exception:
-                    metrics["ahe_sdr_corr"] = "N/A"
+                except (ValueError, Exception):
+                    metrics["ahe_sdr_corr"] = "r = N/A"
         
         return metrics
     
