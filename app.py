@@ -155,7 +155,7 @@ def predict(conversation_text: str, model_id: str, classifier_type: str = "zeros
         input_string = build_input_string(turns[:-1], separator)  # All but last
 
         # Generate using shared inference API
-        output_text, attention_entropy = generate_response(
+        output_text, attention_entropy_raw, attention_entropy_normalized = generate_response(
             model=model,
             tokenizer=tokenizer,
             input_text=input_string,
@@ -173,7 +173,7 @@ def predict(conversation_text: str, model_id: str, classifier_type: str = "zeros
 
         ios_values = compute_ios([output_text], system_instruction)
         ios = float(ios_values[0]) if ios_values and ios_values[0] == ios_values[0] else 0.0
-        ahe = compute_ahe(attention_entropy)
+        ahe = compute_ahe(attention_entropy_normalized)
 
         assistant_scores = []
         for turn in turns:
@@ -511,27 +511,31 @@ def create_interface():
                     metrics = get_headline_metrics()
                     
                     if "best_model" in metrics:
-                        gr.Metric(
+                        gr.Textbox(
                             label="Best Performing Model",
-                            value=metrics.get("best_model", "N/A")
+                            value=metrics.get("best_model", "N/A"),
+                            interactive=False
                         )
                     
                     if "worst_scenario" in metrics:
-                        gr.Metric(
+                        gr.Textbox(
                             label="Worst Scenario",
-                            value=metrics.get("worst_scenario", "N/A")
+                            value=metrics.get("worst_scenario", "N/A"),
+                            interactive=False
                         )
                     
                     if "earliest_tpt" in metrics:
-                        gr.Metric(
+                        gr.Textbox(
                             label="Earliest Mean TPT",
-                            value=metrics.get("earliest_tpt", "N/A")
+                            value=metrics.get("earliest_tpt", "N/A"),
+                            interactive=False
                         )
                     
                     if "ahe_sdr_corr" in metrics:
-                        gr.Metric(
+                        gr.Textbox(
                             label="AHE-SDR Correlation",
-                            value=metrics.get("ahe_sdr_corr", "N/A")
+                            value=metrics.get("ahe_sdr_corr", "N/A"),
+                            interactive=False
                         )
                 
                 # Results table
