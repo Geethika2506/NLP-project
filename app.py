@@ -153,7 +153,16 @@ def predict(conversation_text: str, model_id: str, classifier_type: str = "zeros
         separator = separator_map[model_id]
         
         # Build input string
-        input_string = build_input_string(turns[:-1], separator)  # All but last
+        # For single-turn attacks (SYSTEM + USER only), include both so model can generate ASSISTANT
+        # For multi-turn, include all but last turn (to generate response to last USER)
+        if len(turns) == 2 and turns[-1]["role"] == "user":
+            # Single USER attack - include SYSTEM + USER to generate ASSISTANT response
+            input_turns = turns
+        else:
+            # Multi-turn conversation - all but last turn
+            input_turns = turns[:-1]
+        
+        input_string = build_input_string(input_turns, separator)
 
         # Generate using shared inference API
         output_text, attention_entropy_raw, attention_entropy_normalized = generate_response(
