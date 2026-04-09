@@ -219,7 +219,12 @@ def predict(conversation_text: str, model_id: str, classifier_type: str = "zeros
 
 
 def load_summary_table() -> str:
-    """Load and display summary statistics table.
+    """Load and display summary statistics table (complete metrics only).
+    
+    Displays only metrics that are fully computed across the pipeline:
+    - SCS (Safety Compliance Score)
+    - SDR (Safety Decay Rate)
+    - IOS (Instruction Observance Score)
     
     Returns:
         str: HTML-formatted summary table.
@@ -228,15 +233,39 @@ def load_summary_table() -> str:
         >>> table = load_summary_table()
     """
     try:
-        summary_file = RESULTS_DIR / "features_summary.csv"
+        features_file = RESULTS_DIR / "features.csv"
         
-        if not summary_file.exists():
+        if not features_file.exists():
             return "<p>Summary data not available yet. Run evaluation pipeline first.</p>"
         
-        df = pd.read_csv(summary_file)
-        html_table = df.to_html(float_format=lambda x: f"{x:.3f}")
+        df = pd.read_csv(features_file)
         
-        return html_table
+        # Group by model and scenario, compute aggregates for complete metrics only
+        summary = df.groupby(["model", "scenario_id"])[["scs", "sdr", "ios"]].agg(["mean", "std"]).reset_index()
+        summary.columns = ["Model", "Scenario", "SCS Mean", "SCS Std", "SDR Mean", "SDR Std", "IOS Mean", "IOS Std"]
+        
+        # Format for display
+        def fmt_num(x):
+            if pd.isna(x):
+                return "N/A"
+            if abs(x) < 0.01:
+                return f"{x:.4f}"
+            return f"{x:.3f}"
+        
+        for col in ["SCS Mean", "SCS Std", "SDR Mean", "SDR Std", "IOS Mean", "IOS Std"]:
+            summary[col] = summary[col].apply(fmt_num)
+        
+        html_table = summary.to_html(index=False, border=1)
+        
+        # Add note about data completeness
+        note = """
+        <p style='color: #666; font-size: 12px; margin-top: 10px;'>
+        <strong>Note:</strong> Table shows complete metrics only (SCS, SDR, IOS). 
+        TPT and OAI data is incomplete in current pipeline. See Results Browser for detailed analysis.
+        </p>
+        """
+        
+        return html_table + note
     
     except Exception as e:
         logger.error(f"Error loading summary: {e}")
@@ -319,7 +348,10 @@ def filter_results_table(model: Optional[str], scenario: Optional[str]) -> pd.Da
 
 
 def get_headline_metrics() -> Dict[str, str]:
-    """Compute headline metrics for Results Browser.
+    """Compute headline metrics for Results Browser (only complete metrics).
+    
+    Note: Focuses on fully-computed metrics (SCS, SDR, IOS). 
+    TPT, OAI, and AHE have incomplete data in current pipeline.
     
     Returns:
         Dict[str, str]: Dictionary with metric names and values.
@@ -343,30 +375,27 @@ def get_headline_metrics() -> Dict[str, str]:
         if "model" in df.columns and "scs" in df.columns:
             scs_by_model = df.groupby("model")["scs"].mean()
             best_model = scs_by_model.idxmax()
-            metrics["best_model"] = f"{best_model.upper()} (SCS: {scs_by_model[best_model]:.3f})"
+            metrics["Best Model"] = f"{best_model.upper()} (SCS: {scs_by_model[best_model]:.3f})"
         
         # Worst scenario (lowest mean SCS)
         if "scenario_id" in df.columns and "scs" in df.columns:
             scs_by_scenario = df.groupby("scenario_id")["scs"].mean()
             worst_scenario = scs_by_scenario.idxmin()
-            metrics["worst_scenario"] = f"Scenario {worst_scenario} (SCS: {scs_by_scenario[worst_scenario]:.3f})"
+            metrics["Hardest Scenario"] = f"Scenario {worst_scenario} (SCS: {scs_by_scenario[worst_scenario]:.3f})"
         
-        # Earliest mean TPT
-        if "tpt" in df.columns:
-            tpt_data = df[df["tpt"].notna()]
-            if len(tpt_data) > 0:
-                earliest_tpt = tpt_data["tpt"].min()
-                metrics["earliest_tpt"] = f"Turn {earliest_tpt:.0f}"
+        # Mean IOS degradation
+        if "ios" in df.columns:
+            ios_data = df[df["ios"] > 0]
+            if len(ios_data) > 0:
+                mean_ios = ios_data["ios"].mean()
+                metrics["Mean IOS"] = f"{mean_ios:.3f}"
         
-        # Strongest AHE-SDR correlation (from fig4 data if available)
-        if "ahe" in df.columns and "sdr" in df.columns:
-            valid_data = df.dropna(subset=["ahe", "sdr"])
-            if len(valid_data) > 1:
-                try:
-                    r, p = pearsonr(valid_data["ahe"], valid_data["sdr"])
-                    metrics["ahe_sdr_corr"] = f"r = {r:.3f}"
-                except (ValueError, Exception):
-                    metrics["ahe_sdr_corr"] = "r = N/A"
+        # SDR analysis
+        if "sdr" in df.columns:
+            sdr_data = df[df["sdr"].notna()]
+            if len(sdr_data) > 0:
+                mean_sdr = sdr_data["sdr"].mean()
+                metrics["Mean SDR"] = f"{mean_sdr:.4f}"
         
         return metrics
     
