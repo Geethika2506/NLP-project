@@ -1,0 +1,79 @@
+2026-04-09 17:05:38,033 - INFO - Building Gradio interface...
+2026-04-09 17:05:38,205 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-initiated-analytics "HTTP/1.1 200 OK"
+2026-04-09 17:05:38,700 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-09 17:05:38,949 - INFO - Launching app on http://localhost:7860
+2026-04-09 17:05:39,024 - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-04-09 17:05:39,032 - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2026-04-09 17:05:39,151 - INFO - HTTP Request: HEAD https://huggingface.co/api/telemetry/https%3A/api.gradio.app/gradio-launched-telemetry "HTTP/1.1 200 OK"
+2026-04-09 18:46:19,105 - INFO - Using CPU device
+2026-04-09 18:46:19,252 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/bart-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 18:46:19,261 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/bart-large/cb48c1365bd826bd521f650dc2e0940aee54720c/config.json "HTTP/1.1 200 OK"
+2026-04-09 18:46:19,428 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/bart-large/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-09 18:46:19,428 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-09 18:46:19,561 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large "HTTP/1.1 200 OK"
+2026-04-09 18:46:19,734 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large/commits/main "HTTP/1.1 200 OK"
+2026-04-09 18:46:19,886 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large/discussions?p=0 "HTTP/1.1 200 OK"
+* Running on local URL:  http://0.0.0.0:7860
+* To create a public link, set `share=True` in `launch()`.
+Loading weights:   0%|          | 0/513 [00:00<?, ?it/s]Loading weights: 100%|██████████| 513/513 [00:00<00:00, 64642.13it/s]
+2026-04-09 18:46:20,067 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large/commits/refs%2Fpr%2F4 "HTTP/1.1 200 OK"
+2026-04-09 18:46:20,113 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/bart-large/resolve/main/generation_config.json "HTTP/1.1 404 Not Found"
+2026-04-09 18:46:20,186 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/bart-large/resolve/refs%2Fpr%2F4/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-04-09 18:46:20,241 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/bart-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 18:46:20,251 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/bart-large/cb48c1365bd826bd521f650dc2e0940aee54720c/config.json "HTTP/1.1 200 OK"
+2026-04-09 18:46:20,318 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/bart-large/resolve/refs%2Fpr%2F4/model.safetensors "HTTP/1.1 302 Found"
+2026-04-09 18:46:20,378 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/bart-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 18:46:20,389 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/bart-large/cb48c1365bd826bd521f650dc2e0940aee54720c/config.json "HTTP/1.1 200 OK"
+2026-04-09 18:46:20,520 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/bart-large/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 18:46:20,532 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/bart-large/cb48c1365bd826bd521f650dc2e0940aee54720c/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-09 18:46:20,666 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-09 18:46:20,789 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+`sdpa` attention does not support `output_attentions=True`. Please set your attention to `eager` if you want any of these features.
+2026-04-09 18:46:21,494 - WARNING - Could not compute attention entropy: 'tuple' object has no attribute 'dim'
+2026-04-09 18:46:21,494 - INFO - Loading zero-shot classifier: facebook/bart-large-mnli
+2026-04-09 18:46:21,615 - INFO - HTTP Request: HEAD https://huggingface.co/facebook/bart-large-mnli/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 18:46:21,623 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/bart-large-mnli/d7645e127eaf1aefc7862fd59a17a5aa8558b8ce/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/515 [00:00<?, ?it/s]Loading weights: 100%|██████████| 515/515 [00:00<00:00, 9701.28it/s]
+2026-04-09 18:46:21,849 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-09 18:46:21,974 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-09 18:46:22,077 - INFO - Zero-shot classifier loaded successfully
+2026-04-09 18:46:24,229 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-04-09 18:46:24,248 - INFO - Use pytorch device_name: mps
+2026-04-09 18:46:24,248 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-04-09 18:46:24,366 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 18:46:24,373 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-04-09 18:46:24,492 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 18:46:24,502 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-04-09 18:46:24,629 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 18:46:24,639 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-04-09 18:46:24,758 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 18:46:24,767 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-04-09 18:46:24,889 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 18:46:24,899 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-04-09 18:46:25,021 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 18:46:25,031 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-04-09 18:46:25,153 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-04-09 18:46:25,287 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 18:46:25,298 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 8971.12it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+2026-04-09 18:46:25,468 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 18:46:25,475 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-04-09 18:46:25,594 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 18:46:25,605 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-09 18:46:25,734 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-09 18:46:25,861 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-09 18:46:26,010 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-09 18:46:26,019 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-04-09 18:46:26,186 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-04-09 18:46:26,388 - INFO - Embedding model loaded successfully
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.17it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.17it/s]
+/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/loky-82728-bswl2c8q'}
+  warnings.warn(

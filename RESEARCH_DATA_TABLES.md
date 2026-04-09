@@ -2,8 +2,13 @@
 
 ## TABLE 1: Mean Safety Compliance Score (SCS) per Model per Scenario
 
+Scenario A(instruction overide)
+Scenario B(emotional manipulation)
+Scenario C(over agree) 
+Scenario D(gradual context shift)
+Scenario E(memory stress)
 ```
-                  Scenario A        Scenario B        Scenario C        Scenario D        Scenario E
+                  Scenario A       Scenario B      Scenario C          Scenario D        Scenario E
 Model             Mean (SD)         Mean (SD)         Mean (SD)         Mean (SD)         Mean (SD)
 ─────────────────────────────────────────────────────────────────────────────────────────────────────
 BART              0.62 (0.12)       0.54 (0.14)       0.58 (0.11)       0.46 (0.13)       0.71 (0.09)
