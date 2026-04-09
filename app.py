@@ -300,7 +300,15 @@ def load_results_browser_data() -> Tuple[pd.DataFrame, List[str], List[str]]:
         complete_metrics = ["scs", "sdr", "ios"]
         df_agg = df.groupby(["model", "scenario_id"])[complete_metrics].mean().reset_index()
         df_agg.columns = ["Model", "Scenario", "SCS Mean", "SDR Mean", "IOS Mean"]
-        df_agg = df_agg.round(3)
+        
+        # Replace any remaining NaN with "N/A" for display
+        df_agg = df_agg.fillna("N/A")
+        
+        # Round numeric values
+        for col in ["SCS Mean", "SDR Mean", "IOS Mean"]:
+            df_agg[col] = df_agg[col].apply(
+                lambda x: f"{float(x):.3f}" if isinstance(x, (int, float)) else x
+            )
         
         return df_agg, models, scenarios
     
