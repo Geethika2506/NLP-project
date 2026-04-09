@@ -273,10 +273,13 @@ def load_summary_table() -> str:
 
 
 def load_results_browser_data() -> Tuple[pd.DataFrame, List[str], List[str]]:
-    """Load results browser data and get available models/scenarios.
+    """Load results browser data - aggregated with complete metrics only.
+    
+    Returns only SCS, SDR, IOS (complete metrics). Excludes OAI, TPT, AHE
+    which have incomplete data in the pipeline.
     
     Returns:
-        Tuple[pd.DataFrame, List[str], List[str]]: (dataframe, models, scenarios)
+        Tuple[pd.DataFrame, List[str], List[str]]: (aggregated dataframe, models, scenarios)
     
     Example:
         >>> df, models, scenarios = load_results_browser_data()
@@ -293,7 +296,13 @@ def load_results_browser_data() -> Tuple[pd.DataFrame, List[str], List[str]]:
         models = sorted(df["model"].unique().tolist()) if "model" in df.columns else []
         scenarios = sorted(df["scenario_id"].unique().tolist()) if "scenario_id" in df.columns else []
         
-        return df, models, scenarios
+        # Aggregate by model and scenario - only complete metrics
+        complete_metrics = ["scs", "sdr", "ios"]
+        df_agg = df.groupby(["model", "scenario_id"])[complete_metrics].mean().reset_index()
+        df_agg.columns = ["Model", "Scenario", "SCS Mean", "SDR Mean", "IOS Mean"]
+        df_agg = df_agg.round(3)
+        
+        return df_agg, models, scenarios
     
     except Exception as e:
         logger.error(f"Error loading results browser data: {e}")
@@ -301,14 +310,17 @@ def load_results_browser_data() -> Tuple[pd.DataFrame, List[str], List[str]]:
 
 
 def filter_results_table(model: Optional[str], scenario: Optional[str]) -> pd.DataFrame:
-    """Filter results table by model and scenario.
+    """Filter results table by model and scenario (complete metrics only).
+    
+    Only displays SCS, SDR, IOS - the metrics with complete data across all records.
+    Excludes incomplete metrics: OAI, TPT, AHE.
     
     Args:
         model (Optional[str]): Selected model filter.
         scenario (Optional[str]): Selected scenario filter.
     
     Returns:
-        pd.DataFrame: Filtered results.
+        pd.DataFrame: Filtered results with complete metrics only.
     
     Example:
         >>> df = filter_results_table("bart", "A")
@@ -328,16 +340,16 @@ def filter_results_table(model: Optional[str], scenario: Optional[str]) -> pd.Da
         if scenario and scenario != "All":
             df = df[df["scenario_id"] == scenario]
         
-        # Aggregate by model and scenario
+        # Aggregate by model and scenario - ONLY complete metrics
         if len(df) > 0:
-            agg_dict = {}
-            for col in df.columns:
-                if col not in ["model", "scenario_id", "conv_id", "probe_turn"]:
-                    if df[col].dtype in [float, int]:
-                        agg_dict[col] = "mean"
+            # Only aggregate complete metrics: SCS, SDR, IOS
+            complete_metrics = ["scs", "sdr", "ios"]
+            agg_dict = {col: "mean" for col in complete_metrics if col in df.columns}
             
             if agg_dict and "model" in df.columns and "scenario_id" in df.columns:
-                df_agg = df.groupby(["model", "scenario_id"]).agg(agg_dict).reset_index()
+                df_agg = df.groupby(["model", "scenario_id"])[list(agg_dict.keys())].agg("mean").reset_index()
+                # Rename columns for clarity
+                df_agg.columns = ["Model", "Scenario", "SCS Mean", "SDR Mean", "IOS Mean"]
                 return df_agg.round(3)
         
         return df
