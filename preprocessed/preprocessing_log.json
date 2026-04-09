@@ -1,0 +1,1712 @@
+[
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-001",
+    "probe_turn": 7,
+    "original_token_count": 179,
+    "truncated_token_count": 179,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-001",
+    "probe_turn": 9,
+    "original_token_count": 226,
+    "truncated_token_count": 226,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-001",
+    "probe_turn": 11,
+    "original_token_count": 275,
+    "truncated_token_count": 275,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-002",
+    "probe_turn": 7,
+    "original_token_count": 184,
+    "truncated_token_count": 184,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-002",
+    "probe_turn": 9,
+    "original_token_count": 228,
+    "truncated_token_count": 228,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-002",
+    "probe_turn": 11,
+    "original_token_count": 274,
+    "truncated_token_count": 274,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-003",
+    "probe_turn": 7,
+    "original_token_count": 197,
+    "truncated_token_count": 197,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-003",
+    "probe_turn": 9,
+    "original_token_count": 240,
+    "truncated_token_count": 240,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-003",
+    "probe_turn": 11,
+    "original_token_count": 283,
+    "truncated_token_count": 283,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-004",
+    "probe_turn": 7,
+    "original_token_count": 184,
+    "truncated_token_count": 184,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-004",
+    "probe_turn": 9,
+    "original_token_count": 230,
+    "truncated_token_count": 230,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-004",
+    "probe_turn": 11,
+    "original_token_count": 278,
+    "truncated_token_count": 278,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-005",
+    "probe_turn": 7,
+    "original_token_count": 191,
+    "truncated_token_count": 191,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-005",
+    "probe_turn": 9,
+    "original_token_count": 238,
+    "truncated_token_count": 238,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-005",
+    "probe_turn": 11,
+    "original_token_count": 285,
+    "truncated_token_count": 285,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-006",
+    "probe_turn": 7,
+    "original_token_count": 180,
+    "truncated_token_count": 180,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-006",
+    "probe_turn": 9,
+    "original_token_count": 228,
+    "truncated_token_count": 228,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-006",
+    "probe_turn": 11,
+    "original_token_count": 274,
+    "truncated_token_count": 274,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-007",
+    "probe_turn": 7,
+    "original_token_count": 201,
+    "truncated_token_count": 201,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-007",
+    "probe_turn": 9,
+    "original_token_count": 247,
+    "truncated_token_count": 247,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-007",
+    "probe_turn": 11,
+    "original_token_count": 289,
+    "truncated_token_count": 289,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-008",
+    "probe_turn": 7,
+    "original_token_count": 187,
+    "truncated_token_count": 187,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-008",
+    "probe_turn": 9,
+    "original_token_count": 236,
+    "truncated_token_count": 236,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-008",
+    "probe_turn": 11,
+    "original_token_count": 277,
+    "truncated_token_count": 277,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-009",
+    "probe_turn": 7,
+    "original_token_count": 203,
+    "truncated_token_count": 203,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-009",
+    "probe_turn": 9,
+    "original_token_count": 244,
+    "truncated_token_count": 244,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-009",
+    "probe_turn": 11,
+    "original_token_count": 288,
+    "truncated_token_count": 288,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-010",
+    "probe_turn": 7,
+    "original_token_count": 205,
+    "truncated_token_count": 205,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-010",
+    "probe_turn": 9,
+    "original_token_count": 253,
+    "truncated_token_count": 253,
+    "truncation_occurred": false
+  },
+  {
+    "model": "bart",
+    "scenario_id": "A",
+    "conv_id": "A-010",
+    "probe_turn": 11,
+    "original_token_count": 299,
+    "truncated_token_count": 299,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-001",
+    "probe_turn": 7,
+    "original_token_count": 174,
+    "truncated_token_count": 174,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-001",
+    "probe_turn": 9,
+    "original_token_count": 219,
+    "truncated_token_count": 219,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-001",
+    "probe_turn": 11,
+    "original_token_count": 267,
+    "truncated_token_count": 267,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-002",
+    "probe_turn": 7,
+    "original_token_count": 182,
+    "truncated_token_count": 182,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-002",
+    "probe_turn": 9,
+    "original_token_count": 224,
+    "truncated_token_count": 224,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-002",
+    "probe_turn": 11,
+    "original_token_count": 268,
+    "truncated_token_count": 268,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-003",
+    "probe_turn": 7,
+    "original_token_count": 187,
+    "truncated_token_count": 187,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-003",
+    "probe_turn": 9,
+    "original_token_count": 227,
+    "truncated_token_count": 227,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-003",
+    "probe_turn": 11,
+    "original_token_count": 268,
+    "truncated_token_count": 268,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-004",
+    "probe_turn": 7,
+    "original_token_count": 175,
+    "truncated_token_count": 175,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-004",
+    "probe_turn": 9,
+    "original_token_count": 220,
+    "truncated_token_count": 220,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-004",
+    "probe_turn": 11,
+    "original_token_count": 264,
+    "truncated_token_count": 264,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-005",
+    "probe_turn": 7,
+    "original_token_count": 190,
+    "truncated_token_count": 190,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-005",
+    "probe_turn": 9,
+    "original_token_count": 234,
+    "truncated_token_count": 234,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-005",
+    "probe_turn": 11,
+    "original_token_count": 280,
+    "truncated_token_count": 280,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-006",
+    "probe_turn": 7,
+    "original_token_count": 175,
+    "truncated_token_count": 175,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-006",
+    "probe_turn": 9,
+    "original_token_count": 222,
+    "truncated_token_count": 222,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-006",
+    "probe_turn": 11,
+    "original_token_count": 267,
+    "truncated_token_count": 267,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-007",
+    "probe_turn": 7,
+    "original_token_count": 196,
+    "truncated_token_count": 196,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-007",
+    "probe_turn": 9,
+    "original_token_count": 240,
+    "truncated_token_count": 240,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-007",
+    "probe_turn": 11,
+    "original_token_count": 281,
+    "truncated_token_count": 281,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-008",
+    "probe_turn": 7,
+    "original_token_count": 186,
+    "truncated_token_count": 186,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-008",
+    "probe_turn": 9,
+    "original_token_count": 234,
+    "truncated_token_count": 234,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-008",
+    "probe_turn": 11,
+    "original_token_count": 273,
+    "truncated_token_count": 273,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-009",
+    "probe_turn": 7,
+    "original_token_count": 195,
+    "truncated_token_count": 195,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-009",
+    "probe_turn": 9,
+    "original_token_count": 233,
+    "truncated_token_count": 233,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-009",
+    "probe_turn": 11,
+    "original_token_count": 275,
+    "truncated_token_count": 275,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-010",
+    "probe_turn": 7,
+    "original_token_count": 193,
+    "truncated_token_count": 193,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-010",
+    "probe_turn": 9,
+    "original_token_count": 239,
+    "truncated_token_count": 239,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-010",
+    "probe_turn": 11,
+    "original_token_count": 283,
+    "truncated_token_count": 283,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-001",
+    "probe_turn": 7,
+    "original_token_count": 174,
+    "truncated_token_count": 174,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-001",
+    "probe_turn": 9,
+    "original_token_count": 219,
+    "truncated_token_count": 219,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-001",
+    "probe_turn": 11,
+    "original_token_count": 267,
+    "truncated_token_count": 267,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-002",
+    "probe_turn": 7,
+    "original_token_count": 182,
+    "truncated_token_count": 182,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-002",
+    "probe_turn": 9,
+    "original_token_count": 224,
+    "truncated_token_count": 224,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-002",
+    "probe_turn": 11,
+    "original_token_count": 268,
+    "truncated_token_count": 268,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-003",
+    "probe_turn": 7,
+    "original_token_count": 187,
+    "truncated_token_count": 187,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-003",
+    "probe_turn": 9,
+    "original_token_count": 227,
+    "truncated_token_count": 227,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-003",
+    "probe_turn": 11,
+    "original_token_count": 268,
+    "truncated_token_count": 268,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-004",
+    "probe_turn": 7,
+    "original_token_count": 175,
+    "truncated_token_count": 175,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-004",
+    "probe_turn": 9,
+    "original_token_count": 220,
+    "truncated_token_count": 220,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-004",
+    "probe_turn": 11,
+    "original_token_count": 264,
+    "truncated_token_count": 264,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-005",
+    "probe_turn": 7,
+    "original_token_count": 190,
+    "truncated_token_count": 190,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-005",
+    "probe_turn": 9,
+    "original_token_count": 234,
+    "truncated_token_count": 234,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-005",
+    "probe_turn": 11,
+    "original_token_count": 280,
+    "truncated_token_count": 280,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-006",
+    "probe_turn": 7,
+    "original_token_count": 175,
+    "truncated_token_count": 175,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-006",
+    "probe_turn": 9,
+    "original_token_count": 222,
+    "truncated_token_count": 222,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-006",
+    "probe_turn": 11,
+    "original_token_count": 267,
+    "truncated_token_count": 267,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-007",
+    "probe_turn": 7,
+    "original_token_count": 196,
+    "truncated_token_count": 196,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-007",
+    "probe_turn": 9,
+    "original_token_count": 240,
+    "truncated_token_count": 240,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-007",
+    "probe_turn": 11,
+    "original_token_count": 281,
+    "truncated_token_count": 281,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-008",
+    "probe_turn": 7,
+    "original_token_count": 186,
+    "truncated_token_count": 186,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-008",
+    "probe_turn": 9,
+    "original_token_count": 234,
+    "truncated_token_count": 234,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-008",
+    "probe_turn": 11,
+    "original_token_count": 273,
+    "truncated_token_count": 273,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-009",
+    "probe_turn": 7,
+    "original_token_count": 195,
+    "truncated_token_count": 195,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-009",
+    "probe_turn": 9,
+    "original_token_count": 233,
+    "truncated_token_count": 233,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-009",
+    "probe_turn": 11,
+    "original_token_count": 275,
+    "truncated_token_count": 275,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-010",
+    "probe_turn": 7,
+    "original_token_count": 193,
+    "truncated_token_count": 193,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-010",
+    "probe_turn": 9,
+    "original_token_count": 239,
+    "truncated_token_count": 239,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "A",
+    "conv_id": "A-010",
+    "probe_turn": 11,
+    "original_token_count": 283,
+    "truncated_token_count": 283,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-001",
+    "probe_turn": 7,
+    "original_token_count": 203,
+    "truncated_token_count": 203,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-001",
+    "probe_turn": 9,
+    "original_token_count": 251,
+    "truncated_token_count": 251,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-001",
+    "probe_turn": 11,
+    "original_token_count": 306,
+    "truncated_token_count": 306,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-002",
+    "probe_turn": 7,
+    "original_token_count": 190,
+    "truncated_token_count": 190,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-002",
+    "probe_turn": 9,
+    "original_token_count": 243,
+    "truncated_token_count": 243,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-002",
+    "probe_turn": 11,
+    "original_token_count": 294,
+    "truncated_token_count": 294,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-003",
+    "probe_turn": 7,
+    "original_token_count": 241,
+    "truncated_token_count": 241,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-003",
+    "probe_turn": 9,
+    "original_token_count": 294,
+    "truncated_token_count": 294,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-003",
+    "probe_turn": 11,
+    "original_token_count": 343,
+    "truncated_token_count": 343,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-004",
+    "probe_turn": 7,
+    "original_token_count": 204,
+    "truncated_token_count": 204,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-004",
+    "probe_turn": 9,
+    "original_token_count": 254,
+    "truncated_token_count": 254,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-004",
+    "probe_turn": 11,
+    "original_token_count": 304,
+    "truncated_token_count": 304,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-005",
+    "probe_turn": 7,
+    "original_token_count": 189,
+    "truncated_token_count": 189,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-005",
+    "probe_turn": 9,
+    "original_token_count": 240,
+    "truncated_token_count": 240,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-005",
+    "probe_turn": 11,
+    "original_token_count": 290,
+    "truncated_token_count": 290,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-006",
+    "probe_turn": 7,
+    "original_token_count": 173,
+    "truncated_token_count": 173,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-006",
+    "probe_turn": 9,
+    "original_token_count": 221,
+    "truncated_token_count": 221,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-006",
+    "probe_turn": 11,
+    "original_token_count": 277,
+    "truncated_token_count": 277,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-007",
+    "probe_turn": 7,
+    "original_token_count": 227,
+    "truncated_token_count": 227,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-007",
+    "probe_turn": 9,
+    "original_token_count": 279,
+    "truncated_token_count": 279,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-007",
+    "probe_turn": 11,
+    "original_token_count": 328,
+    "truncated_token_count": 328,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-008",
+    "probe_turn": 7,
+    "original_token_count": 218,
+    "truncated_token_count": 218,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-008",
+    "probe_turn": 9,
+    "original_token_count": 272,
+    "truncated_token_count": 272,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-008",
+    "probe_turn": 11,
+    "original_token_count": 315,
+    "truncated_token_count": 315,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-009",
+    "probe_turn": 7,
+    "original_token_count": 235,
+    "truncated_token_count": 235,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-009",
+    "probe_turn": 9,
+    "original_token_count": 288,
+    "truncated_token_count": 288,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-009",
+    "probe_turn": 11,
+    "original_token_count": 342,
+    "truncated_token_count": 342,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-010",
+    "probe_turn": 7,
+    "original_token_count": 189,
+    "truncated_token_count": 189,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-010",
+    "probe_turn": 9,
+    "original_token_count": 242,
+    "truncated_token_count": 242,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "B",
+    "conv_id": "B-010",
+    "probe_turn": 11,
+    "original_token_count": 293,
+    "truncated_token_count": 293,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-001",
+    "probe_turn": 7,
+    "original_token_count": 178,
+    "truncated_token_count": 178,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-001",
+    "probe_turn": 9,
+    "original_token_count": 227,
+    "truncated_token_count": 227,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-001",
+    "probe_turn": 11,
+    "original_token_count": 269,
+    "truncated_token_count": 269,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-002",
+    "probe_turn": 7,
+    "original_token_count": 215,
+    "truncated_token_count": 215,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-002",
+    "probe_turn": 9,
+    "original_token_count": 264,
+    "truncated_token_count": 264,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-002",
+    "probe_turn": 11,
+    "original_token_count": 306,
+    "truncated_token_count": 306,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-003",
+    "probe_turn": 7,
+    "original_token_count": 193,
+    "truncated_token_count": 193,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-003",
+    "probe_turn": 9,
+    "original_token_count": 231,
+    "truncated_token_count": 231,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-003",
+    "probe_turn": 11,
+    "original_token_count": 276,
+    "truncated_token_count": 276,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-004",
+    "probe_turn": 7,
+    "original_token_count": 228,
+    "truncated_token_count": 228,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-004",
+    "probe_turn": 9,
+    "original_token_count": 277,
+    "truncated_token_count": 277,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-004",
+    "probe_turn": 11,
+    "original_token_count": 316,
+    "truncated_token_count": 316,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-005",
+    "probe_turn": 7,
+    "original_token_count": 147,
+    "truncated_token_count": 147,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-005",
+    "probe_turn": 9,
+    "original_token_count": 189,
+    "truncated_token_count": 189,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-005",
+    "probe_turn": 11,
+    "original_token_count": 231,
+    "truncated_token_count": 231,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-006",
+    "probe_turn": 7,
+    "original_token_count": 208,
+    "truncated_token_count": 208,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-006",
+    "probe_turn": 9,
+    "original_token_count": 251,
+    "truncated_token_count": 251,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-006",
+    "probe_turn": 11,
+    "original_token_count": 296,
+    "truncated_token_count": 296,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-007",
+    "probe_turn": 7,
+    "original_token_count": 212,
+    "truncated_token_count": 212,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-007",
+    "probe_turn": 9,
+    "original_token_count": 262,
+    "truncated_token_count": 262,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-007",
+    "probe_turn": 11,
+    "original_token_count": 304,
+    "truncated_token_count": 304,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-008",
+    "probe_turn": 7,
+    "original_token_count": 242,
+    "truncated_token_count": 242,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-008",
+    "probe_turn": 9,
+    "original_token_count": 283,
+    "truncated_token_count": 283,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-008",
+    "probe_turn": 11,
+    "original_token_count": 327,
+    "truncated_token_count": 327,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-009",
+    "probe_turn": 7,
+    "original_token_count": 223,
+    "truncated_token_count": 223,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-009",
+    "probe_turn": 9,
+    "original_token_count": 263,
+    "truncated_token_count": 263,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-009",
+    "probe_turn": 11,
+    "original_token_count": 307,
+    "truncated_token_count": 307,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-010",
+    "probe_turn": 7,
+    "original_token_count": 253,
+    "truncated_token_count": 253,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-010",
+    "probe_turn": 9,
+    "original_token_count": 305,
+    "truncated_token_count": 305,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "C",
+    "conv_id": "C-010",
+    "probe_turn": 11,
+    "original_token_count": 349,
+    "truncated_token_count": 349,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-001",
+    "probe_turn": 7,
+    "original_token_count": 221,
+    "truncated_token_count": 221,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-001",
+    "probe_turn": 9,
+    "original_token_count": 263,
+    "truncated_token_count": 263,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-001",
+    "probe_turn": 11,
+    "original_token_count": 303,
+    "truncated_token_count": 303,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-002",
+    "probe_turn": 7,
+    "original_token_count": 211,
+    "truncated_token_count": 211,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-002",
+    "probe_turn": 9,
+    "original_token_count": 261,
+    "truncated_token_count": 261,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-002",
+    "probe_turn": 11,
+    "original_token_count": 309,
+    "truncated_token_count": 309,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-003",
+    "probe_turn": 7,
+    "original_token_count": 236,
+    "truncated_token_count": 236,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-003",
+    "probe_turn": 9,
+    "original_token_count": 280,
+    "truncated_token_count": 280,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-003",
+    "probe_turn": 11,
+    "original_token_count": 317,
+    "truncated_token_count": 317,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-004",
+    "probe_turn": 7,
+    "original_token_count": 221,
+    "truncated_token_count": 221,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-004",
+    "probe_turn": 9,
+    "original_token_count": 264,
+    "truncated_token_count": 264,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-004",
+    "probe_turn": 11,
+    "original_token_count": 301,
+    "truncated_token_count": 301,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-005",
+    "probe_turn": 7,
+    "original_token_count": 215,
+    "truncated_token_count": 215,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-005",
+    "probe_turn": 9,
+    "original_token_count": 258,
+    "truncated_token_count": 258,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-005",
+    "probe_turn": 11,
+    "original_token_count": 294,
+    "truncated_token_count": 294,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-006",
+    "probe_turn": 7,
+    "original_token_count": 232,
+    "truncated_token_count": 232,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-006",
+    "probe_turn": 9,
+    "original_token_count": 271,
+    "truncated_token_count": 271,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-006",
+    "probe_turn": 11,
+    "original_token_count": 310,
+    "truncated_token_count": 310,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-007",
+    "probe_turn": 7,
+    "original_token_count": 228,
+    "truncated_token_count": 228,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-007",
+    "probe_turn": 9,
+    "original_token_count": 268,
+    "truncated_token_count": 268,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-007",
+    "probe_turn": 11,
+    "original_token_count": 306,
+    "truncated_token_count": 306,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-008",
+    "probe_turn": 7,
+    "original_token_count": 232,
+    "truncated_token_count": 232,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-008",
+    "probe_turn": 9,
+    "original_token_count": 275,
+    "truncated_token_count": 275,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-008",
+    "probe_turn": 11,
+    "original_token_count": 314,
+    "truncated_token_count": 314,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-009",
+    "probe_turn": 7,
+    "original_token_count": 208,
+    "truncated_token_count": 208,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-009",
+    "probe_turn": 9,
+    "original_token_count": 251,
+    "truncated_token_count": 251,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-009",
+    "probe_turn": 11,
+    "original_token_count": 291,
+    "truncated_token_count": 291,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-010",
+    "probe_turn": 7,
+    "original_token_count": 235,
+    "truncated_token_count": 235,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-010",
+    "probe_turn": 9,
+    "original_token_count": 279,
+    "truncated_token_count": 279,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "D",
+    "conv_id": "D-010",
+    "probe_turn": 11,
+    "original_token_count": 318,
+    "truncated_token_count": 318,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "E",
+    "conv_id": "E-001",
+    "probe_turn": 11,
+    "original_token_count": 325,
+    "truncated_token_count": 325,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "E",
+    "conv_id": "E-002",
+    "probe_turn": 11,
+    "original_token_count": 377,
+    "truncated_token_count": 377,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "E",
+    "conv_id": "E-003",
+    "probe_turn": 11,
+    "original_token_count": 304,
+    "truncated_token_count": 304,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "E",
+    "conv_id": "E-004",
+    "probe_turn": 11,
+    "original_token_count": 394,
+    "truncated_token_count": 394,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "E",
+    "conv_id": "E-005",
+    "probe_turn": 11,
+    "original_token_count": 555,
+    "truncated_token_count": 555,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "E",
+    "conv_id": "E-006",
+    "probe_turn": 11,
+    "original_token_count": 356,
+    "truncated_token_count": 356,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "E",
+    "conv_id": "E-007",
+    "probe_turn": 11,
+    "original_token_count": 461,
+    "truncated_token_count": 461,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "E",
+    "conv_id": "E-008",
+    "probe_turn": 11,
+    "original_token_count": 468,
+    "truncated_token_count": 468,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "E",
+    "conv_id": "E-009",
+    "probe_turn": 11,
+    "original_token_count": 453,
+    "truncated_token_count": 453,
+    "truncation_occurred": false
+  },
+  {
+    "model": "pegasus",
+    "scenario_id": "E",
+    "conv_id": "E-010",
+    "probe_turn": 11,
+    "original_token_count": 494,
+    "truncated_token_count": 494,
+    "truncation_occurred": false
+  }
+]
