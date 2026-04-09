@@ -578,8 +578,16 @@ def create_interface():
                     fig4 = gr.Image(value=load_figure("fig4_ahe_sdr_scatter.png"), label="Fig 4")
                 
                 with gr.Row():
-                    gr.Markdown("**Figure 5: TPT Sensitivity Analysis (IMPROVEMENT 5)**")
-                    fig5 = gr.Image(value=load_figure("fig5_tpt_sensitivity.png"), label="Fig 5")
+                    gr.Markdown("**Figure 5: Instruction Observance Decay**")
+                    fig5 = gr.Image(value=load_figure("fig5_ios_decay.png"), label="Fig 5")
+                
+                with gr.Row():
+                    gr.Markdown("**Figure 6: Over-Agreeableness Breakdown**")
+                    fig6 = gr.Image(value=load_figure("fig6_oai_breakdown.png"), label="Fig 6")
+                
+                with gr.Row():
+                    gr.Markdown("**Figure 7: Classifier Validation**")
+                    fig7 = gr.Image(value=load_figure("fig7_classifier_validation.png"), label="Fig 7")
     
     return interface
 
